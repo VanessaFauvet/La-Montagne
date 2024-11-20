@@ -1,1 +1,30 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "inter-bold";
+  src: url(../fonts/Inter_28pt-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "merri";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: rgb(243, 243, 243);
+}
+
+body {
+  background: url(../img/bg.jpg) fixed center/cover;
+}/*# sourceMappingURL=index.css.map */
