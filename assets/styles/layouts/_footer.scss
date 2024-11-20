@@ -6,11 +6,15 @@ footer {
     display: grid;
     grid-template-columns: 50% 50%;
 
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+    }
+
     form {
         display: grid;
         gap: 18px;
         padding: 60px 50px;
-        grid-template-rows: 18px 45px 18px 48px 18px 200px 1fr;
+        grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
 
         label {
             display: flex;
@@ -44,11 +48,22 @@ footer {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
 
+        div:nth-child(1) {
+            @media screen and (max-width: 900px) {
+                border-top: 1px solid $grey1;
+                padding: 20px 0;
+            }
+        }
+
         div {
             border-bottom: 1px solid $grey1;
             display: grid;
             grid-template-columns: 30% 70%;
             align-items: center;
+
+            @media screen and (max-width: 900px) {
+                grid-template-columns: 45% 55%;
+            }
 
             h3 {
                 @include title;
@@ -65,24 +80,23 @@ footer {
                 color: grey;
             }
         }
-    }
 
-    .social {
-        ul {
-            display: flex;
-        }
+        .social {
+            ul {
+                display: flex;
 
-        li {
-
-            border: 1px solid $grey1;
-            border-radius: 150px;
-            height: 40px;
-            width: 40px;
-            font-size: 0.9rem;
-            margin-right: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+                li {
+                    border: 1px solid $grey1;
+                    border-radius: 150px;
+                    height: 40px;
+                    width: 40px;
+                    font-size: 0.9rem;
+                    margin-right: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
         }
     }
 }
