@@ -1,3 +1,26 @@
-img {
-    width: 50%;
+main {
+    width: 85%;
+    margin: 0 auto 30px;
+    background: $white1;
+
+    img {
+        width: 100%;
+    }
+
+    .section-1 {
+        width: 80%;
+        margin: 0 auto;
+
+        span {
+            padding: 70px 0;
+            position: relative;
+            display: block;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+            }
+        }
+    }
 }
